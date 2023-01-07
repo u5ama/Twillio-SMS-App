@@ -1,0 +1,567 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project        :   VALEX - HTML5 Bootstrap Admin Template
+Version        :   V.1
+Create Date    :   09/05/20
+Copyright      :   Spruko Technologies Private Limited
+Author         :   SprukoSoft
+Author URL     :   https://themeforest.net/user/sprukosoft
+Support	       :   support@spruko.com
+License        :   Licensed under ThemeForest License
+
+-------------------------------------------------------------------*/
+/*
+1.  Accordions
+2.  Alerts
+3.  Badges
+4.  Breadcrumbs
+5.  Buttons
+6.  Card
+7.  Carousel
+8.  Dropdown
+9.  Forms
+10. Grid
+11. Input-group
+12. Modals
+13. Navigation
+14. Pagination
+15. Popover
+16. Progress
+17. Tables
+18. Toast
+19. Tooltip
+20. Tabs
+21. Main-content
+22. Header
+23. Horizontal-menu
+24. Profile
+25. Iconbar
+26. Datatable
+27. Date-picker
+28. Date-time-picker
+29. Jqvmap
+30. Chart
+31. Parsely
+32. Rangeslider
+33. Select2
+34. Spectrum
+35. Calendar
+36. Chat
+37 Contacts
+38. Error
+39. Invoice
+40. Mail
+41. Profile
+42. Background
+43. Border
+44. Height
+45. Margin
+46. Opacity
+47. Padding
+48. Position
+49. Typography
+50. Width
+51. Tags
+52. Navbar
+53. Wizard
+54. P-scroll
+55. Rating
+56. Timeline
+57. Countdown
+58. Image
+59. List
+60. Checkbox
+61  Radio
+62. Toggle
+63  Listgroup
+64  Jumborton
+65  Custom-control
+66  Custom-styles
+67  Tabs
+*/
+/* ######## FONT ######## */
+/* ############### FONTS IMPORT ############### */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap");
+/* ######## BOOTSTRAP ######## */
+/*Color variables*/
+/*gray variables*/
+/*white variables*/
+/*black variables*/
+/*shadow variables*/
+
+
+
+
+
+@media (max-width: 605px) {
+    .main-calendar .fc-header-toolbar {
+        padding: 0;
+    }
+
+    .fc-view {
+        border: 1px solid #e3e8f7;
+    }
+
+    .fc-view > table {
+        border: 1px solid #e3e8f7;
+    }
+
+    .card--calendar .ui-datepicker .ui-datepicker-calendar td a {
+        width: 28px;
+        height: 28px;
+    }
+
+    .main-content-body.main-content-body-calendar.card.p-4 {
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-calendar .fc-header-toolbar .fc-right {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: left;
+        margin-top: 20px;
+    }
+
+    .main-calendar .fc-header-toolbar .fc-left {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: left;
+    }
+}
+
+.card-dashboard-calendar .ui-datepicker-inline {
+    border-width: 0;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-dashboard-calendar .ui-datepicker .ui-datepicker-header {
+    border-bottom: 1px solid #e2e8f5;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.card-dashboard-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-next::before, .card-dashboard-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-prev::before {
+    top: 8px;
+}
+
+.card-dashboard-calendar .ui-datepicker .ui-datepicker-month {
+    color:  #80e613;
+}
+
+.card-dashboard-calendar .ui-datepicker .ui-datepicker-calendar {
+    width: calc(100% - 20px);
+}
+
+.card-dashboard-calendar .ui-datepicker .ui-datepicker-calendar th {
+    font-size: 10px;
+    text-align: center;
+}
+
+.card-dashboard-calendar .ui-datepicker .ui-datepicker-calendar td {
+    text-align: center;
+}
+
+.card-dashboard-calendar .ui-datepicker .ui-datepicker-calendar td a {
+    display: block;
+    width: 34px;
+    height: 34px;
+    font-size: 12px;
+    font-family: 'Archivo', sans-serif;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-dashboard-calendar .ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a {
+    background-color: transparent;
+    border: 2px solid  #80e613;
+    color:  #80e613;
+    font-weight: 700;
+}
+
+@media (min-width: 576px) {
+    .card-dashboard-calendar .ui-datepicker .ui-datepicker-calendar {
+        width: 100%;
+    }
+}
+
+/* ###### 3.2 Datepicker ###### */
+.ui-datepicker {
+    background-color: #fff;
+    border: 1px solid rgba(28, 39, 60, 0.2);
+    font-family: inherit;
+    font-size: inherit;
+    padding: 10px;
+    margin: 1px 0 0;
+    display: none;
+    width: auto !important;
+    z-index: 5 !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #031b4e;
+    padding: 0 0 5px;
+    letter-spacing: 1px;
+    border: 0;
+    background-color: transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next, .ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
+    text-indent: -99999px;
+    color: #737f9e;
+    top: 3px;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next::before, .ui-datepicker .ui-datepicker-header .ui-datepicker-prev::before {
+    font-size: 16px;
+    font-family: 'Ionicons';
+    position: absolute;
+    top: -2px;
+    text-indent: 0;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover::before, .ui-datepicker .ui-datepicker-header .ui-datepicker-next:focus::before {
+    color: #364261;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover::before, .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:focus::before {
+    color: #364261;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+    order: 3;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next:before {
+    right: 5px;
+    content: '\f3d1';
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:before {
+    left: 5px;
+    content: '\f3cf';
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next-hover, .ui-datepicker .ui-datepicker-header .ui-datepicker-prev-hover {
+    color: #4d5875;
+    cursor: pointer;
+    top: 1px;
+    border: 0;
+    background-color: transparent;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    color: #364261;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.ui-datepicker .ui-datepicker-calendar {
+    margin: 0;
+    background-color: transparent;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.ui-datepicker .ui-datepicker-calendar th {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 6px 9px;
+    color: #364261;
+}
+
+/* ###### 4.12 Datetimepicker ###### */
+/* Amaze UI Datetimepicker */
+.datetimepicker {
+    box-shadow: none;
+    border-radius: 0;
+    border-width: 1px;
+    border-color: #d0d7e8;
+    min-width: 270px;
+    padding: 0 10px 10px;
+}
+
+.datetimepicker::before {
+    display: none;
+}
+
+.datetimepicker table {
+    width: 100%;
+}
+
+.datetimepicker table th.prev, .datetimepicker table th.next, .datetimepicker table th.switch {
+    background-color: #fff;
+    color: #031b4e;
+}
+
+.datetimepicker table th.prev, .datetimepicker table th.next {
+    position: relative;
+}
+
+.datetimepicker table th.prev span, .datetimepicker table th.next span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.datetimepicker table th.prev span::before, .datetimepicker table th.next span::before {
+    font-family: 'Ionicons';
+    position: absolute;
+    top: 50%;
+    font-size: 16px;
+    color: #242f48;
+    line-height: 0;
+}
+
+.datetimepicker table th.prev:hover, .datetimepicker table th.prev:focus {
+    background-color: #fff;
+}
+
+.datetimepicker table th.next:hover, .datetimepicker table th.next:focus {
+    background-color: #fff;
+}
+
+.datetimepicker table th.prev:hover span::before, .datetimepicker table th.prev:focus span::before {
+    color:  #80e613;
+}
+
+.datetimepicker table th.next:hover span::before, .datetimepicker table th.next:focus span::before {
+    color:  #80e613;
+}
+
+.datetimepicker table th.prev span::before {
+    content: '\f3cf';
+    left: 0;
+}
+
+.datetimepicker table th.next span::before {
+    content: '\f3d1';
+    right: 0;
+}
+
+.datetimepicker table th.switch {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #242f48;
+}
+
+.datetimepicker table th.switch:hover, .datetimepicker table th.switch:focus {
+    background-color: #fff;
+    color:  #80e613;
+}
+
+.datetimepicker table td {
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.datetimepicker table td.old, .datetimepicker table td.new {
+    color: #949eb7;
+}
+
+.datetimepicker table td.active {
+    background-color:  #80e613;
+    color: #fff;
+}
+
+.datetimepicker table td.active:hover, .datetimepicker table td.active:focus {
+    background-color:  #80e613;
+    color: #fff;
+}
+
+.datetimepicker table span.active {
+    background-color:  #80e613;
+    color: #fff;
+}
+
+.datetimepicker table span.active:hover, .datetimepicker table span.active:focus {
+    background-color:  #80e613;
+    color: #fff;
+}
+
+.datetimepicker .datetimepicker-days table thead tr:first-child th {
+    height: 38px;
+}
+
+.datetimepicker .datetimepicker-days table thead tr:last-child th {
+    height: 25px;
+    text-transform: uppercase;
+    color: #4d5875;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+/* jQuery Simple Datetimepicker */
+.main-datetimepicker {
+    box-shadow: none;
+    border-radius: 0;
+    border-color: #d0d7e8;
+    margin-top: 2px;
+}
+
+.main-datetimepicker > .datepicker_header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-datetimepicker > .datepicker_header > .icon-home {
+    display: none;
+}
+
+.main-datetimepicker > .datepicker_header a:nth-child(2), .main-datetimepicker > .datepicker_header a:last-child {
+    display: block;
+    position: relative;
+    text-indent: -999999px;
+}
+
+.main-datetimepicker > .datepicker_header a:nth-child(2)::before, .main-datetimepicker > .datepicker_header a:last-child::before {
+    font-family: 'Ionicons';
+    position: absolute;
+    top: 50%;
+    line-height: 0;
+    text-indent: 0;
+    font-size: 13px;
+}
+
+.main-datetimepicker > .datepicker_header a:nth-child(2)::before {
+    content: '\f3cf';
+    left: 0;
+}
+
+.main-datetimepicker > .datepicker_header a:last-child::before {
+    content: '\f3d1';
+    right: 0;
+}
+
+.main-datetimepicker > .datepicker_header span {
+    font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+}
+
+.main-datetimepicker > .datepicker_inner_container {
+    border-radius: 0;
+    box-shadow: none;
+    border-width: 0;
+    display: flex;
+    height: 225px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.main-datetimepicker > .datepicker_inner_container::after {
+    display: none;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_calendar {
+    width: 230px;
+    border-width: 0;
+    border-radius: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding: 5px;
+    float: none;
+    margin: 0;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_calendar > table {
+    width: 100%;
+    height: 100%;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_calendar th {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #242f48;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px 5px;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_calendar td {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_calendar td.day_another_month {
+    color: #949eb7;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_calendar td.hover {
+    background-color: #dde2ef;
+    cursor: pointer;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_calendar td.active {
+    background-color:  #80e613;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_timelist {
+    float: none;
+    width: 70px;
+    height: 100% !important;
+    border-left: 1px solid #b9c2d8;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item {
+    padding: 5px 8px;
+    margin: 0 0 0 1px;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item:hover, .main-datetimepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item:focus {
+    background-color: #dde2ef;
+}
+
+.main-datetimepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item.active {
+    background-color:  #80e613;
+    color: #fff;
+}
+
+/* Picker JS */
+.picker-title {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.picker-cell__header {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: .4px;
+}
+
+.picker-item {
+    font-family: "Archivo", -apple-system, BlinkMacSystemFont, 'Nunito Sans', "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.picker-picked {
+    font-weight: 500;
+    color:  #80e613;
+}
+
